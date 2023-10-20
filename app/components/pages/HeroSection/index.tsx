@@ -9,23 +9,22 @@ import {
   TbBrandWhatsapp,
   TbBrandGmail,
 } from 'react-icons/tb';
-import { useWindowSize } from '@/app/hooks/useWindowSize';
 
 const MOCK_CONTACTS = [
   {
-    url: 'https://github.com',
+    url: 'https://github.com/bbynog',
     icon: <TbBrandGithub />,
   },
   {
-    url: 'https://linkedin.com',
+    url: 'https://www.linkedin.com/in/bbynog/',
     icon: <TbBrandLinkedin />,
   },
   {
-    url: 'https://whatsapp.com',
+    url: 'https://wa.me/5584996834627',
     icon: <TbBrandWhatsapp />,
   },
   {
-    url: 'https://gmail.com',
+    url: 'mailto:gcruznogueira@gmail.com',
     icon: <TbBrandGmail />,
   },
 ];
