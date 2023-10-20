@@ -50,7 +50,7 @@ export const HeroSection = () => {
             ))}
           </div>
           <div className='mt-6 flex flex-row items-center gap-5 lg:mt-10'>
-            <Button className='shadow-button'>
+            <Button className='shadow-regular'>
               Contact Me
               <HiArrowNarrowRight size={18} />
             </Button>
@@ -74,7 +74,7 @@ export const HeroSection = () => {
           height={404}
           src={'/images/profile-pic.jpeg'}
           alt='Gabriel Nogueira Profile Picture'
-          className='mb-6 h-[300px] w-[300px] rounded-lg object-cover shadow-button lg:mb-0 lg:h-[404px] lg:w-[420px]'
+          className='shadow-regular mb-6 h-[300px] w-[300px] rounded-lg object-cover lg:mb-0 lg:h-[404px] lg:w-[420px]'
         />
       </div>
     </section>

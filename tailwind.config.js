@@ -17,7 +17,8 @@ module.exports = {
         mono: ['var(--font-plex-mono)', 'monospace'],
       },
       boxShadow: {
-        button: '0px 0px 68px 7px rgba(128, 0, 128, 0.4)',
+        regular: '0px 0px 68px 7px rgba(128, 0, 128, 0.4)',
+        high: '0px 0px 68px 7px rgba(128, 0, 128, 1.0)',
       },
     },
   },
