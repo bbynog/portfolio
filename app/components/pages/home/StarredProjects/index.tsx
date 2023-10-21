@@ -6,7 +6,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 
 export const StarredProjects = () => {
   return (
-    <section className='container'>
+    <section className='container pt-4'>
       <SectionTitle title='Starred Projects' subtitle='highlights' />
       <div>
         <ProjectCard />

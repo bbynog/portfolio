@@ -12,7 +12,7 @@ export const SectionTitle = ({
   className,
 }: SectionTitleProps) => {
   return (
-    <div className={cn('flex flex-col gap-4', className)}>
+    <div className={cn('flex flex-col gap-3', className)}>
       <span className='font-mono text-sm text-purple-400'>
         {`../${subtitle}`}
       </span>
