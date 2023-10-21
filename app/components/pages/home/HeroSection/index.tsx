@@ -34,10 +34,12 @@ export const HeroSection = () => {
     <section className='lg-pb-[110px] flex w-full flex-col justify-end bg-hero-image bg-cover bg-center bg-no-repeat py-32 pb-10 sm:pb-32 lg:h-[755px]'>
       <div className='container flex flex-col-reverse items-start justify-between lg:flex-row'>
         <div className='w-full lg:max-w-[530px]'>
-          <p className='pt-2 font-mono text-purple-400 lg:pt-0'>
-            Hello, my name is
-          </p>
-          <h2 className='pt-2 text-4xl font-medium'>Gabriel Nogueira</h2>
+          <div className='text-center lg:text-left'>
+            <p className='pt-2 font-mono text-purple-400 lg:pt-0'>
+              Hello, my name is
+            </p>
+            <h2 className='pt-2 text-4xl font-medium'>Gabriel Nogueira</h2>
+          </div>
 
           <p className='py-6 text-sm text-gray-400 sm:text-base'>
             Hello! I'm a web developer, passionate about <b>tech</b>. With over{' '}
@@ -74,7 +76,7 @@ export const HeroSection = () => {
           height={404}
           src={'/images/profile-pic.jpeg'}
           alt='Gabriel Nogueira Profile Picture'
-          className='shadow-regular mb-6 h-[300px] w-[300px] rounded-lg object-cover lg:mb-0 lg:h-[404px] lg:w-[420px]'
+          className='shadow-regular mb-6 h-[300px] w-[300px] self-center rounded-lg object-cover lg:mb-0 lg:h-[404px] lg:w-[420px]'
         />
       </div>
     </section>
