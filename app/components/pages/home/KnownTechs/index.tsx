@@ -4,7 +4,7 @@ import { TbBrandNextjs } from 'react-icons/tb';
 
 export const KnownTechs = () => {
   return (
-    <div className='container py-8'>
+    <div className='container pt-4 lg:pt-6'>
       <SectionTitle title='Knowledge' subtitle='expertise' />
       <div className='grid grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-3 pt-[60px]'>
         {Array.from({ length: 8 }).map((_, index) => (

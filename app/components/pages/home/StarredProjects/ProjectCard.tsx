@@ -5,7 +5,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 
 export const ProjectCard = () => {
   return (
-    <div className='flex flex-col gap-6 pt-16 lg:flex-row lg:gap-12'>
+    <div className='flex flex-col gap-6 pt-8 lg:flex-row lg:gap-12'>
       <div className='h-full w-full'>
         <Image
           width={420}

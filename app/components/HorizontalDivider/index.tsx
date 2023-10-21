@@ -6,7 +6,7 @@ type HorizontalDividerProps = {
 export const HorizontalDivider = ({ className }: HorizontalDividerProps) => {
   return (
     <div
-      className={cn('w-full border-b border-b-gray-800 py-8', className)}
+      className={cn('w-full border-b border-b-gray-800 py-4', className)}
     ></div>
   );
 };
