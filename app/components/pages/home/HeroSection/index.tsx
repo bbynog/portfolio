@@ -76,7 +76,7 @@ export const HeroSection = () => {
           height={404}
           src={'/images/profile-pic.jpeg'}
           alt='Gabriel Nogueira Profile Picture'
-          className='shadow-regular mb-6 h-[300px] w-[300px] self-center rounded-lg object-cover lg:mb-0 lg:h-[404px] lg:w-[420px]'
+          className='shadow-low mb-6 h-[300px] w-[300px] self-center rounded-lg object-cover lg:mb-0 lg:h-[404px] lg:w-[420px]'
         />
       </div>
     </section>
