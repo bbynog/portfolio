@@ -10,19 +10,14 @@ export const ProjectCard = () => {
         <Image
           width={420}
           height={304}
-          src='/images/xw.png'
+          src='/images/powergestor-logo.png'
           alt='PowerGestor Logo'
           className='bg-color-gray-400 h-[200px] max-w-[420] rounded-lg object-cover sm:h-[300px] lg:min-h-full '
         />
       </div>
       <div>
         <h3 className='flex items-center gap-3 text-lg font-medium text-gray-50'>
-          <Image
-            width={20}
-            height={20}
-            alt='arrow'
-            src='/images/icons/project-title-icon.svg'
-          />
+          <HiArrowNarrowRight width={20} height={20} color='#a855f7' />
           PowerGestor
         </h3>
         <p className='py-6 text-gray-400'>
@@ -41,7 +36,7 @@ export const ProjectCard = () => {
         </div>
 
         <Link href='/projects/power-gestor'>
-          Check project
+          Check it out!
           <HiArrowNarrowRight />
         </Link>
       </div>
