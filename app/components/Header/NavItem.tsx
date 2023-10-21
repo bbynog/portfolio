@@ -18,6 +18,7 @@ export const NavItem = ({ label, href }: NavItemProps) => {
       className={cn(
         'flex items-center gap-2 font-mono font-medium text-gray-400 transition-all',
         isActive && 'text-gray-50',
+        !isActive && 'hover:text-gray-50',
       )}
     >
       <span className='text-purple-400'>#</span>
