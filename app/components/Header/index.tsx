@@ -21,8 +21,9 @@ export const Header = () => {
           <Image
             width={58}
             height={49}
-            src={'/images/logo.svg'}
+            src={'/images/logo.png'}
             alt='Logo Gabriel Nogueira Dev'
+            className='shadow-regular rounded-full'
           />
         </Link>
         <nav className='flex items-center gap-4 sm:gap-10'>
