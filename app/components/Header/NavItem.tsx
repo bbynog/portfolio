@@ -1,4 +1,4 @@
-import { cn } from '@/app/lib/utils';
+import { cn } from '@/app/lib/cn';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 

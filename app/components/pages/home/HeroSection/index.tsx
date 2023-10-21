@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { TechBadge } from '../../TechBadge';
-import { Button } from '../../Button';
+import { TechBadge } from '../../../TechBadge';
+import { Button } from '../../../Button';
 
 import { HiArrowNarrowDown, HiArrowNarrowRight } from 'react-icons/hi';
 import {
