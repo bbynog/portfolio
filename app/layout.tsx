@@ -5,6 +5,8 @@ import './globals.css';
 import { ReactNode } from 'react';
 import { Header } from './components/Header';
 import { Analytics } from '@vercel/analytics/react';
+import { ContactForm } from './components/ContactForm';
+import { Footer } from './components/Footer';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -23,6 +25,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <Header />
         {children}
+        <ContactForm />
+        <Footer />
 
         <Analytics />
       </body>
