@@ -4,37 +4,9 @@ import { HeroSection } from './components/pages/home/HeroSection';
 import { KnownTechs } from './components/pages/home/KnownTechs';
 import { ProfessionalJourney } from './components/pages/home/ProfessionalJourney';
 import { StarredProjects } from './components/pages/home/StarredProjects';
+import DEFAULT_METADATA from './DEFAULT_METADATA';
 
-export const metadata: Metadata = {
-  title: 'Gabriel Nogueira',
-  description:
-    "Gabriel Nogueira's portfolio website, built using next.js. I'm a full stack web developer with four 4 years of experience. Here I show skills like tailwind, react, node, typescript. Contact Me! :)",
-  generator: 'Gabriel Nogueira',
-  applicationName: 'Gabriel Nogueira Portfolio ',
-  referrer: 'origin-when-cross-origin',
-  keywords: [
-    'Next.js',
-    'React',
-    'TypeScript',
-    'Javascript',
-    'Tailwind',
-    'React Query',
-    'Developer',
-    'Hire',
-    'Freelance',
-    'Contract',
-  ],
-  authors: [{ name: 'Gabriel Nogueira' }],
-  colorScheme: 'dark',
-  creator: 'Gabriel Nogueira',
-  publisher: 'Gabriel Nogueira',
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  metadataBase: new URL('https://gabrielnogueira.tech'),
-};
+export const metadata: Metadata = DEFAULT_METADATA;
 
 export default async function Home() {
   return (
