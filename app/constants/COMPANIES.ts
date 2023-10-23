@@ -14,10 +14,10 @@ const COMPANIES = [
       'Electron',
       'APIs',
     ],
-    iconSrc: '/images/powergestor-mini-logo.png',
+    iconSrc: '/images/powergestor/powergestor-mini-logo.png',
     iconAlt: 'TrueSoft Logo',
     companyWebsite: 'https://www.truesoft.com.br/',
-    startDate: 'may 2021 • oct 2023',
+    startDate: 'may 2021 • moment',
   },
   {
     companyName: 'Various',
@@ -25,7 +25,7 @@ const COMPANIES = [
     description:
       'Here I bundled my contracts as a freelancer for various companies.',
     skills: [
-      'Next.js 13',
+      'Next.js',
       'React Native',
       'React.js',
       'TypeScript',

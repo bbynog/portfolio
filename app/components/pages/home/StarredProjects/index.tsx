@@ -4,6 +4,7 @@ import { ProjectCard } from './ProjectCard';
 import { Link } from '@/app/components/Link';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import PROJECTS from '@/app/constants/PROJECTS';
+import { Fragment } from 'react';
 
 interface StarredProjects {
   title: string;
@@ -21,14 +22,19 @@ export const StarredProjects = () => {
         {PROJECTS.map((starredProject, index) => {
           if (!starredProject.isStarred) return null;
           if (index === PROJECTS.length - 1) {
-            return <ProjectCard {...starredProject} />;
+            return (
+              <ProjectCard
+                {...starredProject}
+                key={`starredprojects-${index}`}
+              />
+            );
           }
 
           return (
-            <>
+            <Fragment key={`starredprojects-${index}`}>
               <ProjectCard {...starredProject} />
               <HorizontalDivider />
-            </>
+            </Fragment>
           );
         })}
 

@@ -38,7 +38,7 @@ export const ProjectDetails = ({
         {description}
       </p>
       <div className='flex w-full max-w-[330px] flex-wrap items-center justify-center gap-2'>
-        {techStack.map((tech, index) => (
+        {techStack?.map((tech, index) => (
           <TechBadge
             name={tech}
             key={`tech-project-${title}-${tech}-${index}`}
@@ -59,7 +59,7 @@ export const ProjectDetails = ({
         </a>
         <a href={productionUrl} target='_blank'>
           <Button className='w-[160px] max-w-[180px]'>
-            <FiGlobe size={20} /> Live Project
+            <FiGlobe size={20} /> Live App
           </Button>
         </a>
       </div>

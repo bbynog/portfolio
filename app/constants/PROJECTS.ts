@@ -1,8 +1,21 @@
-const PROJECTS = [
+export interface Project {
+  title: string;
+  description: string;
+  techStack: string[];
+  url: string;
+  imageSrc: string;
+  imageAlt: string;
+  isStarred?: boolean;
+  imageStyles?: string;
+  productionUrl: string;
+  screenshots?: { title: string; image: string }[];
+}
+
+const PROJECTS: Project[] = [
   {
     title: 'PowerGestor',
     description:
-      'Built using AngularJS and React. Powergestor sure was a challenge. The whole system is huge and complex, but it was a great experience. It has a desktop(using electron), mobile(using cordova/capacitor) and web versions.',
+      'ERP System. Built using AngularJS and React. Powergestor sure was a challenge. The whole system is huge and complex, but it was a great experience. It has a desktop(using electron), mobile(using cordova/capacitor) and web versions.',
     techStack: [
       'React',
       'TypeScript',
@@ -12,15 +25,30 @@ const PROJECTS = [
       'Electron',
       'APIs',
     ],
-    url: '/projects/power-gestor',
-    imageSrc: '/images/powergestor-logo.png',
+    url: '/projects/powergestor',
+    imageSrc: '/images/powergestor/powergestor-logo.png',
     imageAlt: 'PowerGestor Logo',
     isStarred: true,
+    productionUrl: 'https://app.powergestor.com/',
+    screenshots: [
+      {
+        title: 'Login',
+        image: '/images/powergestor/powergestor-login.png',
+      },
+      {
+        title: 'Home',
+        image: '/images/powergestor/powergestor-home.png',
+      },
+      {
+        title: 'Finance Module',
+        image: '/images/powergestor/powergestor-financ.png',
+      },
+    ],
   },
   {
     title: 'PowerApp',
     description:
-      'Built using React Native. PowerApp was the first project that I got my hands on when working at TrueSoft. It surely thought me a lot about mobile applications, React Native and deployment on the stores.',
+      'POS App. Built using React Native. PowerApp was the first project that I got my hands on when working at TrueSoft. It surely thought me a lot about mobile applications, React Native and deployment on the stores.',
     techStack: [
       'React Native',
       'TypeScript',
@@ -29,10 +57,12 @@ const PROJECTS = [
       'StyledComponents',
       'APIs',
     ],
-    url: '/projects/power-app',
-    imageSrc: '/images/powerapp-logo.png',
+    url: '/projects/powerapp',
+    imageSrc: '/images/powerapp/powerapp-logo.png',
     imageAlt: 'PowerApp Logo',
     isStarred: true,
+    productionUrl:
+      'https://play.google.com/store/apps/details?id=com.powergestor.rnative',
   },
   {
     title: 'PowerBonus',
@@ -46,10 +76,12 @@ const PROJECTS = [
       'StyledComponents',
       'APIs',
     ],
-    url: '/projects/power-bonus',
-    imageSrc: '/images/powerbonus-logo.ico',
+    url: '/projects/powerbonus',
+    imageSrc: '/images/powerbonus/powerbonus-logo.ico',
     imageAlt: 'PowerApp Logo',
     imageStyles: 'object-contain bg-white',
+    productionUrl: 'https://app.powergestor.com/loyalty/',
+    isStarred: false,
   },
 ];
 
