@@ -12,9 +12,9 @@ type ProjectProps = {
 
 const mapProject = (slug: string) => {
   switch (slug) {
-    case 'powergestor':
-      return PROJECTS[0];
     case 'powerapp':
+      return PROJECTS[0];
+    case 'powergestor':
       return PROJECTS[1];
     case 'powerbonus':
       return PROJECTS[2];
@@ -47,6 +47,7 @@ export default function Project({ params: { slug } }: ProjectProps) {
   if (!project) {
     return null;
   }
+
   return (
     <div>
       <ProjectDetails
