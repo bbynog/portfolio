@@ -15,7 +15,7 @@ const PROJECTS: Project[] = [
   {
     title: 'PowerApp',
     description:
-      'POS App. Built using React Native. PowerApp was the first project that I got my hands on when working at TrueSoft. It surely thought me a lot about mobile applications, React Native and deployment on the stores.',
+      'POS App. Built using React Native. PowerApp was the first project that I got my hands on when working at TrueSoft. It surely taught me a lot about mobile applications, React Native and deployment on the stores.',
     techStack: [
       'React Native',
       'TypeScript',
