@@ -7,6 +7,9 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import axios from 'axios';
+
+import { LoaderIcon, toast } from 'react-hot-toast';
 
 const contactFormSchema = z.object({
   name: z.string().min(3).max(100),
@@ -17,20 +20,29 @@ const contactFormSchema = z.object({
 type ContactFormData = z.infer<typeof contactFormSchema>;
 
 export const ContactForm = () => {
-  const { handleSubmit, register, setValue } = useForm<ContactFormData>({
+  const {
+    handleSubmit,
+    register,
+    reset,
+    formState: { isSubmitting },
+  } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
   });
 
-  const onSubmit = (data: any) => {
-    console.log('form data', data);
+  const onSubmit = async (data: any) => {
+    try {
+      await axios.post('/api/contact', data);
+      reset();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    //
-    //
-    // deal with message
-
-    setValue('name', '');
-    setValue('email', '');
-    setValue('message', '');
+      toast.success('Message sent! :)', {
+        duration: 5000,
+      });
+    } catch {
+      toast.error('Something went wrong... Please, try again.', {
+        duration: 3000,
+      });
+    }
   };
   return (
     <section
@@ -62,9 +74,20 @@ export const ContactForm = () => {
             {...register('message')}
           />
           <div className='pt-6'>
-            <Button className='mx-auto h-max shadow-regular'>
-              Send message
-              <HiArrowNarrowRight size={18} />
+            <Button
+              className='mx-auto h-max shadow-regular'
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? (
+                <>
+                  Sending...
+                  <LoaderIcon />
+                </>
+              ) : (
+                <>
+                  Send <HiArrowNarrowRight size={18} />
+                </>
+              )}
             </Button>
           </div>
         </form>
