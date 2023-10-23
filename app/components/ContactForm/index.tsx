@@ -33,7 +33,10 @@ export const ContactForm = () => {
     setValue('message', '');
   };
   return (
-    <section className='flex items-center justify-center bg-gray-950 px-6 py-16 md:py-32'>
+    <section
+      id='contact'
+      className='flex items-center justify-center bg-gray-950 px-6 py-16 md:py-32'
+    >
       <div className='mx-auto w-full max-w-[420px]'>
         <SectionTitle subtitle='contact' title='Get in touch!' className='' />
 

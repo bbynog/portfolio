@@ -7,6 +7,7 @@ import { Header } from './components/Header';
 import { Analytics } from '@vercel/analytics/react';
 import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
+import { BackToTop } from './components/BackToTop';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -27,6 +28,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {children}
         <ContactForm />
         <Footer />
+
+        <BackToTop />
 
         <Analytics />
       </body>
