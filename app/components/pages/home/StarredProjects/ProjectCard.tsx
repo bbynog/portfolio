@@ -9,7 +9,6 @@ type ProjectCardProps = {
   techStack: string[];
   url: string;
   imageSrc: string;
-  projectLink: string;
 };
 
 export const ProjectCard = ({
