@@ -53,7 +53,7 @@ export const ExperienceItem = ({
           <p className='pb-3 pt-3 text-sm font-semibold text-gray-400'>
             Skills
           </p>
-          <div className='flex flex-wrap gap-x-2 gap-y-3 pb-8 lg:max-w-[350px]'>
+          <div className='flex max-w-[550px] flex-wrap gap-x-2 gap-y-3 pb-8'>
             {skills.map((skill, index) => (
               <TechBadge name={skill} key={`tech-badge-experience-${index}`} />
             ))}
