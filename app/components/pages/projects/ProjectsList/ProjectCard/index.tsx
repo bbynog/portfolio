@@ -23,7 +23,7 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <Link href={url}>
-      <div className='group flex h-[436px] flex-col overflow-hidden rounded-lg bg-gray-800 opacity-70 shadow-low ring-purple-700 transition-all duration-500 hover:opacity-100 hover:shadow-regular hover:ring-2'>
+      <div className='group flex h-[436px] flex-col overflow-hidden rounded-lg bg-gray-800 shadow-low ring-purple-700 transition-all duration-500 hover:shadow-regular hover:ring-2 sm:opacity-70 sm:hover:opacity-100'>
         <div className='h-48 w-full overflow-hidden'>
           <Image
             src={imageSrc}
