@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import { TechBadge } from '../../../TechBadge';
-import { Button } from '../../../Button';
 
-import { HiArrowNarrowDown, HiArrowNarrowRight } from 'react-icons/hi';
+import { HiArrowNarrowRight } from 'react-icons/hi';
 import {
   TbBrandGithub,
   TbBrandLinkedin,
@@ -42,20 +41,23 @@ export const HeroSection = () => {
           </div>
 
           <p className='py-6 text-sm text-gray-400 sm:text-base'>
-            Hello! I'm a web developer, passionate about <b>tech</b>. With over{' '}
-            <b>4 years of experience.</b> My goal is to build beautiful and
+            I'm a web developer, passionate about <b>tech</b>. With over
+            <b>5 years of experience.</b> My goal is to build beautiful,
             performant user interfaces and this is my portfolio! :)
           </p>
-          <div className='flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]'>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <TechBadge name='Next.js' key={`tech-badge-${index}`} />
-            ))}
+          <div className='flex flex-wrap gap-x-2 gap-y-3'>
+            <TechBadge name='Next.js' />
+            <TechBadge name='React.js' />
+            <TechBadge name='React Native' />
+            <TechBadge name='Node.js' />
+            <TechBadge name='TypeScript' />
+            <TechBadge name='TailwindCSS' />
           </div>
           <div className='mt-6 flex flex-row items-center gap-5 lg:mt-10'>
-            <Button className='shadow-regular'>
-              Contact Me
-              <HiArrowNarrowRight size={18} />
-            </Button>
+            <p className='flex items-center justify-center gap-1'>
+              <span className='text-gray-200'>Social Media</span>
+              <HiArrowNarrowRight />
+            </p>
 
             <div className='flex h-20 items-center gap-3 text-2xl text-gray-600'>
               {MOCK_CONTACTS.map((contact, index) => (
@@ -76,7 +78,7 @@ export const HeroSection = () => {
           height={404}
           src={'/images/profile-pic.jpeg'}
           alt='Gabriel Nogueira Profile Picture'
-          className='shadow-low mb-6 h-[300px] w-[300px] self-center rounded-lg object-cover lg:mb-0 lg:h-[404px] lg:w-[420px]'
+          className='mb-6 h-[300px] w-[300px] self-center rounded-lg object-cover shadow-low lg:mb-0 lg:h-[404px] lg:w-[420px]'
         />
       </div>
     </section>

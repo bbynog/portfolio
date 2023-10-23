@@ -7,7 +7,7 @@ export const ProjectsList = () => {
       <Link href='/projects/powergestor'>
         <ProjectCard />
       </Link>
-      <Link href='/projects/powergestor'>
+      <Link href='/projects/powerapp'>
         <ProjectCard />
       </Link>
       <Link href='/projects/powergestor'>
