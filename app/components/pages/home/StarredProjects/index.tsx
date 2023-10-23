@@ -17,7 +17,7 @@ const STARRED_PROJECTS_MOCK: StarredProjects[] = [
   {
     title: 'PowerGestor',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repellat esse quod libero odit quo rerum perferendis! Corporis,aspernatur at veritatis',
+      'ERP System. Built using AngularJS and React. Powergestor sure was a challenge. The whole system is huge and complex, but it was a great experience. It has a desktop(using electron), mobile(using cordova/capacitor) and web versions.',
     techStack: [
       'React',
       'TypeScript',
@@ -34,7 +34,7 @@ const STARRED_PROJECTS_MOCK: StarredProjects[] = [
   {
     title: 'PowerApp',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repellat esse quod libero odit quo rerum perferendis! Corporis,aspernatur at veritatis',
+      'POS System. Build using React Native. PowerApp was the first project that I got my hands on when working at TrueSoft. It surely thought me a lot about mobile applications, React Native and deployment on the stores.',
     techStack: [
       'React Native',
       'TypeScript',

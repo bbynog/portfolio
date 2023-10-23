@@ -15,7 +15,7 @@ interface ExperienceItemProps {
 const EXPERIENCE_MOCK: ExperienceItemProps[] = [
   {
     companyName: 'TrueSoft',
-    job: 'Frontend and Mobile Developer',
+    job: 'Frontend/Mobile Developer',
     description:
       "Had the opportunity to handle all the processes relative to the company's Mobile applications and to do maintenance/implement new features on the Frontend applications",
     skills: [

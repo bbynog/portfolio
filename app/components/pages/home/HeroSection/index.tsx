@@ -42,7 +42,7 @@ export const HeroSection = () => {
 
           <p className='py-6 text-sm text-gray-400 sm:text-base'>
             I'm a web developer, passionate about <b>tech</b>. With over
-            <b>5 years of experience.</b> My goal is to build beautiful,
+            <b> 5 years of experience.</b> My goal is to build beautiful,
             performant user interfaces and this is my portfolio! :)
           </p>
           <div className='flex flex-wrap gap-x-2 gap-y-3'>
