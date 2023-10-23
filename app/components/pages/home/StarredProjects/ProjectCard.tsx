@@ -18,7 +18,6 @@ export const ProjectCard = ({
   techStack,
   url,
   imageSrc,
-  projectLink,
 }: ProjectCardProps) => {
   return (
     <div className='flex flex-col gap-6 pt-8 lg:flex-row lg:gap-12'>
@@ -32,12 +31,13 @@ export const ProjectCard = ({
         />
       </div>
       <div>
-        <a href={projectLink} target='_blank'>
-          <h3 className='flex items-center gap-3 text-lg font-medium text-gray-300/90 transition-colors hover:text-gray-50'>
-            <HiArrowNarrowRight width={20} height={20} color='#a855f7' />
-            {title}
-          </h3>
-        </a>
+        <Link
+          href={url}
+          className='flex items-center gap-3 text-lg font-medium text-gray-50'
+        >
+          <HiArrowNarrowRight width={20} height={20} color='#a855f7' />
+          {title}
+        </Link>
 
         <p className='py-6 text-gray-400'>{description}</p>
         <div className='flex flex-wrap gap-x-2 gap-y-3 pb-8 lg:max-w-[350px]'>
