@@ -12,10 +12,8 @@ export const PageIntroduction = () => {
       />
       <div className='flex flex-col items-center'>
         <p className='max-w-[640px] py-6 text-center text-sm text-gray-400 sm:text-base'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque
-          obcaecati voluptatum et possimus quo soluta fugiat delectus mollitia,
-          hic corporis ullam minus distinctio, recusandae numquam repellat ea
-          eos molestias.
+          Here are some projects that I have worked on. Some of them I've built
+          from scratch and some I have contributed to.
         </p>
         <Link href={'/'}>
           <HiArrowNarrowLeft /> Back to home

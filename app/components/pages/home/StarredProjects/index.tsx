@@ -54,9 +54,18 @@ export const StarredProjects = () => {
     <section className='container pt-4 lg:pt-6'>
       <SectionTitle title='Starred Projects' subtitle='highlights' />
       <div>
-        <ProjectCard {...STARRED_PROJECTS_MOCK[0]} />
-        <HorizontalDivider />
-        <ProjectCard {...STARRED_PROJECTS_MOCK[1]} />
+        {STARRED_PROJECTS_MOCK.map((starredProject, index) => {
+          if (index === STARRED_PROJECTS_MOCK.length - 1) {
+            return <ProjectCard {...starredProject} />;
+          }
+
+          return (
+            <>
+              <ProjectCard {...starredProject} />
+              <HorizontalDivider />
+            </>
+          );
+        })}
 
         <p className='flex items-center justify-center gap-1.5 pt-8 lg:pt-12'>
           <span className='text-gray-400'>Got interested?</span>

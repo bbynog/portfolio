@@ -8,6 +8,7 @@ interface Projects {
   url: string;
   imageSrc: string;
   imageAlt: string;
+  imageStyles?: string;
 }
 
 const PROJECTS_MOCK: Projects[] = [
@@ -59,18 +60,16 @@ const PROJECTS_MOCK: Projects[] = [
     url: '/projects/power-bonus',
     imageSrc: '/images/powerbonus-logo.ico',
     imageAlt: 'PowerApp Logo',
+    imageStyles: 'object-contain bg-white',
   },
 ];
 
 export const ProjectsList = () => {
   return (
     <section className='container grid grid-cols-1 gap-x-4 gap-y-6 py-32 sm:grid-cols-[repeat(auto-fit,minmax(350px,1fr))]'>
-      <ProjectCard {...PROJECTS_MOCK[0]} />
-      <ProjectCard {...PROJECTS_MOCK[1]} />
-      <ProjectCard
-        {...PROJECTS_MOCK[2]}
-        imageStyles='object-contain bg-white'
-      />
+      {PROJECTS_MOCK.map((project, index) => (
+        <ProjectCard {...project} />
+      ))}
     </section>
   );
 };

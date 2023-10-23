@@ -22,7 +22,7 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div className='flex flex-col gap-6 pt-8 lg:flex-row lg:gap-12'>
-      <div className='h-[300px] w-full max-w-[420px] overflow-hidden rounded-lg sm:h-full lg:min-h-full'>
+      <div className='h-[300px] w-full max-w-[420px] overflow-hidden rounded-lg lg:min-h-[200px]'>
         <Image
           width={420}
           height={304}
