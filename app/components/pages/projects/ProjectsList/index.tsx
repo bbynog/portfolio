@@ -32,7 +32,7 @@ const PROJECTS_MOCK: Projects[] = [
   {
     title: 'PowerApp',
     description:
-      'Build using React Native. PowerApp was the first project that I got my hands on when working at TrueSoft. It surely thought me a lot about mobile applications, React Native and deployment on the stores.',
+      'Built using React Native. PowerApp was the first project that I got my hands on when working at TrueSoft. It surely thought me a lot about mobile applications, React Native and deployment on the stores.',
     techStack: [
       'React Native',
       'TypeScript',
@@ -48,7 +48,7 @@ const PROJECTS_MOCK: Projects[] = [
   {
     title: 'PowerBonus',
     description:
-      'Build using React and Capacitor. PowerBonus is a client-company fidelity program system. It was a system designed and mostly developed by me.',
+      'Built using React and Capacitor. PowerBonus is a client-company fidelity program system. It was a system designed and mostly developed by me.',
     techStack: [
       'React',
       'TypeScript',
