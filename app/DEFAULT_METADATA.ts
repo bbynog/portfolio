@@ -25,7 +25,6 @@ const DEFAULT_METADATA: Metadata = {
     'W2',
   ],
   authors: [{ name: 'Gabriel Nogueira' }],
-  colorScheme: 'dark',
   creator: 'Gabriel Nogueira',
   publisher: 'Gabriel Nogueira',
   formatDetection: {
