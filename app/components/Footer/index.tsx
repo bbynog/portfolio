@@ -14,6 +14,7 @@ export const Footer = () => {
           exit={{ opacity: 0.5, scale: 0.5 }}
           transition={{
             type: 'spring',
+            delay: 0.1,
           }}
         >
           <IoMdHeart size={13} className='text-purple-500' />
