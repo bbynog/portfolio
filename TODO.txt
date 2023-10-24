@@ -1,0 +1,5 @@
+Review Huguinho:
+    * Foto profissional
+    * Menos texto Hero Section
+    * Contact me button
+    * pesquisar como fazer case

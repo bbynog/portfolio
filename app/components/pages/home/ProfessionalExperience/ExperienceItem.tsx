@@ -1,4 +1,8 @@
+'use client';
+
 import { TechBadge } from '@/app/components/TechBadge';
+import { fadeUpAnimation, techBadgeAnimation } from '@/app/lib/animations';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 type ExperienceItemProps = {
@@ -23,7 +27,11 @@ export const ExperienceItem = ({
   startDate,
 }: ExperienceItemProps) => {
   return (
-    <div className='grid grid-cols-[40px,1fr] gap-4 md:gap-10'>
+    <motion.div
+      className='grid grid-cols-[40px,1fr] gap-4 md:gap-10'
+      {...fadeUpAnimation}
+      transition={{ duration: 0.5 }}
+    >
       <div className='flex flex-col items-center gap-4'>
         <div className='rounded-full border border-gray-500'>
           <Image
@@ -55,11 +63,16 @@ export const ExperienceItem = ({
           </p>
           <div className='flex max-w-[550px] flex-wrap gap-x-2 gap-y-3 pb-8'>
             {skills.map((skill, index) => (
-              <TechBadge name={skill} key={`tech-badge-experience-${index}`} />
+              <TechBadge
+                name={skill}
+                key={`tech-badge-experience-${index}`}
+                {...techBadgeAnimation}
+                transition={{ duration: 0.2, delay: index * 0.1 }}
+              />
             ))}
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
