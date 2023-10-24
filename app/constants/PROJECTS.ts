@@ -9,6 +9,7 @@ export interface Project {
   imageStyles?: string;
   productionUrl: string;
   screenshots?: { title: string; image: string; isMobile?: boolean }[];
+  codeAvailable: boolean;
 }
 
 const PROJECTS: Project[] = [
@@ -38,7 +39,11 @@ const PROJECTS: Project[] = [
         image: '/images/powerapp/clients.jpg',
         isMobile: true,
       },
-      { title: 'Sold', image: '/images/powerapp/sales.jpg', isMobile: true },
+      {
+        title: 'Sales Record',
+        image: '/images/powerapp/sales.jpg',
+        isMobile: true,
+      },
       { title: 'Cart', image: '/images/powerapp/cart.jpg', isMobile: true },
       {
         title: 'Products',
@@ -61,6 +66,7 @@ const PROJECTS: Project[] = [
         isMobile: true,
       },
     ],
+    codeAvailable: false,
   },
   {
     title: 'PowerGestor',
@@ -98,6 +104,7 @@ const PROJECTS: Project[] = [
         image: '/images/powergestor/powergestor-pdv-sell.png',
       },
     ],
+    codeAvailable: false,
   },
   {
     title: 'PowerBonus',
@@ -131,6 +138,7 @@ const PROJECTS: Project[] = [
         image: '/images/powerbonus/extract.png',
       },
     ],
+    codeAvailable: false,
   },
 ];
 

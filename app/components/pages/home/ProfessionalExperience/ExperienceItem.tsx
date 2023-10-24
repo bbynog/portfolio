@@ -42,7 +42,7 @@ export const ExperienceItem = ({
           <a
             href={companyWebsite}
             target='_blank'
-            className='font-mono text-gray-500 transition-colors hover:text-purple-500'
+            className='font-mono text-gray-50 transition-colors lg:text-gray-500 lg:hover:text-purple-500'
           >
             @ {companyName}
           </a>

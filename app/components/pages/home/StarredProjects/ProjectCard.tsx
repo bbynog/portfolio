@@ -1,7 +1,10 @@
+'use client';
+
 import { Link } from '@/app/components/Link';
 import { TechBadge } from '@/app/components/TechBadge';
+import { scrollToElement } from '@/app/lib/scrollToElement';
 import Image from 'next/image';
-import { HiArrowNarrowRight } from 'react-icons/hi';
+import { HiArrowNarrowRight, HiOutlineExternalLink } from 'react-icons/hi';
 
 type ProjectCardProps = {
   title: string;
@@ -9,6 +12,8 @@ type ProjectCardProps = {
   techStack: string[];
   url: string;
   imageSrc: string;
+  productionUrl?: string;
+  codeAvailable: boolean;
 };
 
 export const ProjectCard = ({
@@ -17,6 +22,8 @@ export const ProjectCard = ({
   techStack,
   url,
   imageSrc,
+  productionUrl,
+  codeAvailable,
 }: ProjectCardProps) => {
   return (
     <div className='flex flex-col gap-6 pt-8 lg:flex-row lg:gap-12'>
@@ -45,8 +52,19 @@ export const ProjectCard = ({
           ))}
         </div>
 
-        <Link href={url}>
-          Check it out!
+        {productionUrl && (
+          <a href={productionUrl} target={productionUrl}>
+            <button className='flex items-center text-center text-sm text-gray-300 transition-colors hover:text-purple-500'>
+              Live App
+              <div className='pl-1'>
+                <HiOutlineExternalLink size={16} />
+              </div>
+            </button>
+          </a>
+        )}
+
+        <Link href={url} className='text-md pt-1'>
+          About the project
           <HiArrowNarrowRight />
         </Link>
       </div>
