@@ -9,6 +9,8 @@ import { Link } from '@/app/components/Link';
 import { HiArrowNarrowLeft } from 'react-icons/hi';
 import { cn } from '@/app/lib/cn';
 import { scrollToElement } from '@/app/lib/scrollToElement';
+import { motion } from 'framer-motion';
+import { fadeUpAnimation, techBadgeAnimation } from '@/app/lib/animations';
 
 type ProjectDetailsProps = {
   title: string;
@@ -34,18 +36,26 @@ export const ProjectDetails = ({
         }}
       />
       <SectionTitle subtitle='projects' title={title} />
-      <p className='max-w-[640px] py-4 text-center text-sm text-gray-400 sm:text-base'>
-        {description}
-      </p>
+      <motion.div {...fadeUpAnimation}>
+        <p className='max-w-[640px] py-4 text-center text-sm text-gray-400 sm:text-base'>
+          {description}
+        </p>
+      </motion.div>
+
       <div className='flex w-full max-w-[330px] flex-wrap items-center justify-center gap-2'>
         {techStack?.map((tech, index) => (
           <TechBadge
             name={tech}
             key={`tech-project-${title}-${tech}-${index}`}
+            {...techBadgeAnimation}
+            transition={{ duration: 0.3, delay: index * 0.1 }}
           />
         ))}
       </div>
-      <div className='flex flex-col items-center gap-2 py-6 sm:flex-row sm:gap-4 sm:py-12'>
+      <motion.div
+        className='flex flex-col items-center gap-2 py-6 sm:flex-row sm:gap-4 sm:py-12'
+        {...fadeUpAnimation}
+      >
         <a href={repositoryUrl} target={repositoryUrl && '_blank'}>
           <Button
             className={cn(
@@ -62,7 +72,7 @@ export const ProjectDetails = ({
             <FiGlobe size={20} /> Live App
           </Button>
         </a>
-      </div>
+      </motion.div>
       <Link href={'/projects'}>
         <HiArrowNarrowLeft size={20} /> Back to projects
       </Link>

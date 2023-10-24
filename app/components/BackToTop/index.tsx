@@ -2,8 +2,8 @@
 
 import { TbArrowNarrowUp } from 'react-icons/tb';
 import { Button } from '../Button';
-import { scrollToElement } from '../../lib/scrollToElement';
 import { useCallback, useEffect, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export const BackToTop = () => {
   const [show, setShow] = useState(false);
@@ -26,17 +26,22 @@ export const BackToTop = () => {
   }, [handleScroll]);
 
   return (
-    <>
+    <AnimatePresence>
       {show && (
-        <div className='fixed bottom-4 right-4 z-20 transition-all'>
+        <motion.div
+          className='fixed bottom-4 right-4 z-20 transition-all'
+          initial={{ opacity: 0, right: -5 }}
+          animate={{ opacity: 1, right: 16 }}
+          exit={{ opacity: 0, right: -5 }}
+        >
           <Button
             onClick={handleClick}
             className='shadow-lg shadow-purple-400/20'
           >
             <TbArrowNarrowUp size={20} />
           </Button>
-        </div>
+        </motion.div>
       )}
-    </>
+    </AnimatePresence>
   );
 };
