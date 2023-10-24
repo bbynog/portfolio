@@ -59,12 +59,12 @@ export const HeroSection = () => {
               <HiArrowNarrowRight />
             </p>
 
-            <div className='flex h-20 items-center gap-3 text-2xl text-gray-600'>
+            <div className='flex h-20 items-center gap-3 text-2xl text-gray-100 lg:text-gray-600'>
               {MOCK_CONTACTS.map((contact, index) => (
                 <a
                   href={contact.url}
                   target='_blank'
-                  className='transition-colors hover:text-gray-100'
+                  className='transition-colors lg:hover:text-gray-100'
                   key={`contact-${index}`}
                 >
                   {contact.icon}
