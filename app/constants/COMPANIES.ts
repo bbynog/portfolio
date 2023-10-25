@@ -36,7 +36,7 @@ const COMPANIES = [
     iconSrc: '/images/portfolio-mini-logo.ico',
     iconAlt: 'Gabriel Nogueira Logo',
     companyWebsite: 'https://gabrielnogueira.tech',
-    startDate: 'apr 2018 • Moment (5 years)',
+    startDate: 'apr 2018 • Moment (4 years)',
   },
 ];
 
