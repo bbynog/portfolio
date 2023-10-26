@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { TechBadge } from '../../../TechBadge';
 
 import { HiArrowNarrowRight } from 'react-icons/hi';
@@ -14,6 +13,8 @@ import {
 import { motion } from 'framer-motion';
 import TECH_BADGES from '@/app/constants/TECH_BADGES';
 import { techBadgeAnimation } from '@/app/lib/animations';
+import React from 'react';
+import { HeroProfilePicture } from './HeroProfilePicture';
 
 const MOCK_CONTACTS = [
   {
@@ -34,7 +35,7 @@ const MOCK_CONTACTS = [
   },
 ];
 
-export const HeroSection = () => {
+const HeroSection = () => {
   return (
     <section className='lg-pb-[110px] flex w-full flex-col justify-end bg-hero-image bg-cover bg-center bg-no-repeat py-32 pb-10 sm:pb-32 lg:h-[755px]'>
       <div className='container flex flex-col-reverse items-start justify-between lg:flex-row'>
@@ -87,23 +88,10 @@ export const HeroSection = () => {
             </div>
           </div>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 200, scale: 0.5 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: 200, scale: 0.5 }}
-          transition={{ duration: 0.5 }}
-          className='self-center'
-        >
-          <Image
-            width={420}
-            height={404}
-            src={'/images/profile-pic.jpeg'}
-            alt='Gabriel Nogueira Profile Picture'
-            className='mb-6 h-[300px] w-[300px] rounded-lg object-cover shadow-low lg:mb-0 lg:h-[404px] lg:w-[420px]'
-          />
-        </motion.div>
+        <HeroProfilePicture />
       </div>
     </section>
   );
 };
+
+export default HeroSection;

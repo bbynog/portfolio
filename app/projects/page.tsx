@@ -1,4 +1,4 @@
-import DEFAULT_METADATA from '../DEFAULT_METADATA';
+import DEFAULT_METADATA from '../constants/DEFAULT_METADATA';
 import { PageIntroduction } from '../components/pages/projects/PageIntroduction';
 import { ProjectsList } from '../components/pages/projects/ProjectsList';
 

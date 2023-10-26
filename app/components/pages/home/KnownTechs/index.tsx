@@ -6,7 +6,7 @@ import { KnownTechCard } from './KnownTechCard';
 import TECH_BADGES from '@/app/constants/TECH_BADGES';
 import { motion } from 'framer-motion';
 
-export const KnownTechs = () => {
+const KnownTechs = () => {
   return (
     <div className='container pt-4 lg:pt-6'>
       <SectionTitle title='Knowledge' subtitle='expertise' />
@@ -26,3 +26,5 @@ export const KnownTechs = () => {
     </div>
   );
 };
+
+export default KnownTechs;

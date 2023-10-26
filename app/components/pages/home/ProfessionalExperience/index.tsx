@@ -13,7 +13,7 @@ interface ExperienceItemProps {
   startDate: string;
 }
 
-export const ProfessionalExperience = () => {
+const ProfessionalExperience = () => {
   return (
     <section className='container flex flex-col gap-10 pt-4 md:flex-row md:gap-4 lg:gap-16 lg:pt-6'>
       {/* <div className='max-w-[420px]'> */}
@@ -32,3 +32,5 @@ export const ProfessionalExperience = () => {
     </section>
   );
 };
+
+export default ProfessionalExperience;

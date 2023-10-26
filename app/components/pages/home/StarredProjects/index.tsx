@@ -14,7 +14,7 @@ interface StarredProjects {
   imageSrc: string;
   projectLink: string;
 }
-export const StarredProjects = () => {
+const StarredProjects = () => {
   return (
     <section className='container pt-4 lg:pt-6'>
       <SectionTitle title='Starred Projects' subtitle='highlights' />
@@ -49,3 +49,5 @@ export const StarredProjects = () => {
     </section>
   );
 };
+
+export default StarredProjects;
