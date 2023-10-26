@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { NavItem } from './NavItem';
 import { motion } from 'framer-motion';
+import { Suspense } from 'react';
+import { LoaderIcon } from 'react-hot-toast';
 
 const NAV_ITEMS = [
   {
@@ -26,13 +28,15 @@ export const Header = () => {
     >
       <div className='container flex items-center justify-between'>
         <Link href={'/'}>
-          <Image
-            width={58}
-            height={49}
-            src={'/images/logo.png'}
-            alt='Logo Gabriel Nogueira Dev'
-            className='rounded-full duration-500 hover:shadow-regular'
-          />
+          <Suspense fallback={<LoaderIcon />}>
+            <Image
+              width={58}
+              height={49}
+              src={'/images/logo.png'}
+              alt='Logo Gabriel Nogueira Dev'
+              className='rounded-full duration-500 hover:shadow-regular'
+            />
+          </Suspense>
         </Link>
         <nav className='flex items-center gap-4 sm:gap-10'>
           {NAV_ITEMS.map((item) => (
