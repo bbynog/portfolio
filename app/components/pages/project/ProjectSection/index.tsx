@@ -4,6 +4,8 @@ import { fadeUpAnimation } from '@/app/lib/animations';
 import { cn } from '@/app/lib/cn';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { Suspense } from 'react';
+import { LoaderIcon } from 'react-hot-toast';
 
 type ProjectSectionProps = {
   title: string;
@@ -26,13 +28,15 @@ export const ProjectSection = ({
         <h2 className='text-2xl font-medium text-gray-300 md:text-3xl'>
           {title}
         </h2>
-        <Image
-          src={image}
-          width={isMobile ? 400 : 1080}
-          height={672}
-          className={cn('aspect-auto rounded-lg object-cover')}
-          alt={'Case Section ' + title}
-        />
+        <Suspense fallback={<LoaderIcon />}>
+          <Image
+            src={image}
+            width={isMobile ? 400 : 1080}
+            height={672}
+            className={cn('aspect-auto rounded-lg object-cover')}
+            alt={'Case Section ' + title}
+          />
+        </Suspense>
       </motion.div>
     </section>
   );
