@@ -31,7 +31,7 @@ export const Header = () => {
             height={49}
             src={'/images/logo.png'}
             alt='Logo Gabriel Nogueira Dev'
-            className='rounded-full transition-all duration-500 hover:shadow-regular'
+            className='rounded-full duration-500 hover:shadow-regular'
           />
         </Link>
         <nav className='flex items-center gap-4 sm:gap-10'>

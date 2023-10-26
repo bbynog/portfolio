@@ -29,7 +29,7 @@ export const BackToTop = () => {
     <AnimatePresence>
       {show && (
         <motion.div
-          className='fixed bottom-4 right-4 z-20 transition-all'
+          className='fixed bottom-4 right-4 z-20'
           initial={{ opacity: 0, right: -5 }}
           animate={{ opacity: 1, right: 16 }}
           exit={{ opacity: 0, right: -5 }}

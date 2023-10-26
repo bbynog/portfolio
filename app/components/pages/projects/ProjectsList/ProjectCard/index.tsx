@@ -31,7 +31,7 @@ export const ProjectCard = ({
             height={200}
             alt={imageAlt}
             className={cn(
-              'h-full w-full object-cover transition-transform duration-500 group-hover:scale-110',
+              'h-full w-full object-cover duration-500 group-hover:scale-110',
               imageStyles,
             )}
             unoptimized

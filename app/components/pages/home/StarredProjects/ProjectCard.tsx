@@ -44,8 +44,8 @@ export const ProjectCard = ({
           width={420}
           height={304}
           src={imageSrc}
-          alt='PowerGestor Logo'
-          className='bg-color-gray-400 h-full w-full object-cover transition-transform duration-500 hover:scale-110'
+          alt='Company Image'
+          className='bg-color-gray-400 h-full w-full object-cover duration-500 hover:scale-110'
         />
       </motion.div>
       <div>
@@ -79,7 +79,7 @@ export const ProjectCard = ({
 
         {productionUrl && (
           <a href={productionUrl} target={productionUrl}>
-            <button className='flex items-center text-center text-sm text-gray-300 transition-colors hover:text-purple-500'>
+            <button className='flex items-center text-center text-sm text-gray-300 hover:text-purple-500'>
               Live App
               <div className='pl-1'>
                 <HiOutlineExternalLink size={16} />
