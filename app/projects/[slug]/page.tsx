@@ -1,4 +1,4 @@
-import DEFAULT_METADATA from '@/app/DEFAULT_METADATA';
+import DEFAULT_METADATA from '@/app/constants/DEFAULT_METADATA';
 import { ProjectDetails } from '@/app/components/pages/project/ProjectDetails';
 import { ProjectSection } from '@/app/components/pages/project/ProjectSection';
 import PROJECTS, { Project } from '@/app/constants/PROJECTS';

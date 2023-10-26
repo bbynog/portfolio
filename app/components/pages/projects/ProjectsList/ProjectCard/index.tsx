@@ -34,7 +34,6 @@ export const ProjectCard = ({
               'h-full w-full object-cover duration-500 group-hover:scale-110',
               imageStyles,
             )}
-            unoptimized
           />
         </div>
 

@@ -32,7 +32,6 @@ export const ProjectSection = ({
           height={672}
           className={cn('aspect-auto rounded-lg object-cover')}
           alt={'Case Section ' + title}
-          unoptimized
         />
       </motion.div>
     </section>
