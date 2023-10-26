@@ -18,7 +18,7 @@ export const KnownTechCard = ({
   );
 
   return (
-    <div className='flex flex-col gap-2 rounded-lg bg-gray-600/20 p-6 text-gray-500 transition-all hover:bg-gray-600/30 hover:text-purple-400 hover:shadow-low'>
+    <div className='flex flex-col gap-2 rounded-lg bg-gray-600/20 p-6 text-gray-500 hover:bg-gray-600/30 hover:text-purple-400 hover:shadow-low'>
       <div className='flex items-center justify-between text-purple-400'>
         <p className='font-medium'>{name}</p>
         {icon}
