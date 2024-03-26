@@ -56,7 +56,7 @@ const HeroSection = () => {
           <p className='py-6 text-sm text-gray-300 sm:text-base'>
             I'm a software engineer, <b>deeply</b> passionate about life &
             technology! With over 5 years of professional tech experience, my
-            career goal is to bring great solutions to humankind's greatest
+            career goal is to bring great solutions to humankind's biggest
             problems through technology.
           </p>
           <div className='flex flex-wrap gap-x-2 gap-y-3'>
