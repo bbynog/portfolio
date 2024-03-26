@@ -12,12 +12,14 @@ type ProjectProps = {
 
 const mapProject = (slug: string) => {
   switch (slug) {
-    case 'powerapp':
+    case 'pan':
       return PROJECTS[0];
-    case 'powergestor':
+    case 'powerapp':
       return PROJECTS[1];
-    case 'powerbonus':
+    case 'powergestor':
       return PROJECTS[2];
+    case 'powerbonus':
+      return PROJECTS[3];
     default:
       return null;
   }

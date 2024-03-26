@@ -37,7 +37,7 @@ export const ExperienceItem = ({
           <Image
             width={40}
             height={40}
-            className='h-[40px] w-[40px] rounded-full bg-white object-contain px-0.5 pb-1'
+            className='h-[40px] w-[40px] rounded-full bg-white object-cover'
             src={iconSrc}
             alt={iconAlt}
           />

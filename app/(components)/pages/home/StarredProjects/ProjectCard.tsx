@@ -34,21 +34,21 @@ export const ProjectCard = ({
       transition={{ duration: 0.5 }}
     >
       <motion.div
-        className='h-[300px] w-full max-w-[420px] overflow-hidden rounded-lg lg:min-h-[200px]'
+        className='h-[300px] w-[380px] max-w-[400px] self-center overflow-hidden rounded-lg lg:w-[40%] lg:self-start'
         initial={{ opacity: 0, y: 100, scale: 0.5 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: 100, scale: 0.5 }}
         transition={{ duration: 0.3, delay: 0.1 }}
       >
         <Image
-          width={420}
-          height={304}
+          width={320}
+          height={280}
           src={imageSrc}
           alt='Company Image'
           className='bg-color-gray-400 h-full w-full object-cover duration-500 hover:scale-110'
         />
       </motion.div>
-      <div>
+      <div className='lg:w-[60%]'>
         <motion.div {...fadeUpAnimation} transition={{ duration: 0.5 }}>
           <Link
             href={url}

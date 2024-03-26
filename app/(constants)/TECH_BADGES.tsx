@@ -16,7 +16,7 @@ type TechBadge = {
 const TECH_BADGES: TechBadge[] = [
   {
     name: 'Next.js',
-    startDate: '2022-01-01',
+    startDate: '2023-01-01',
     icon: <TbBrandNextjs />,
   },
   {

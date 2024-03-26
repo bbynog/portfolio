@@ -13,7 +13,7 @@ export const HeroProfilePicture = () => {
       <Image
         width={420}
         height={404}
-        src={'/images/profile-pic.jpeg'}
+        src={'/images/profile-pic.jpg'}
         alt='Gabriel Nogueira Profile Picture'
         className='mb-6 h-[300px] w-[300px] rounded-lg object-cover shadow-low lg:mb-0 lg:h-[404px] lg:w-[420px]'
       />

@@ -14,6 +14,45 @@ export interface Project {
 
 const PROJECTS: Project[] = [
   {
+    title: 'Pan',
+    description:
+      "Co-Founder & Head Front-End Engineer. Pan is an AI Video/Content Generation and Distribution platform. I'm responsible for the front-end team and engage in all infra/project's discussions with backend and AI teams. I also work with them when needed and sometimes when we are interested on each others work.",
+    techStack: [
+      'Next.js',
+      'TypeScript',
+      'Python',
+      'Django',
+      'FastAPI',
+      'GCP',
+      'AWS',
+      'Vercel',
+    ],
+    url: '/projects/pan',
+    imageSrc: '/images/pan/pan-logo.png',
+    imageAlt: 'Pan Logo',
+    isStarred: true,
+    productionUrl: 'https://usepan.ai',
+    screenshots: [
+      {
+        title: 'Home - Video Generation',
+        image: '/images/pan/home.png',
+      },
+      {
+        title: 'Profile',
+        image: '/images/pan/profile.png',
+      },
+      {
+        title: 'Videos',
+        image: '/images/pan/videos.png',
+      },
+      {
+        title: 'Video Details & Editing',
+        image: '/images/pan/video-details.png',
+      },
+    ],
+    codeAvailable: false,
+  },
+  {
     title: 'PowerApp',
     description:
       'POS App. Built using React Native. PowerApp was the first project that I got my hands on when working at TrueSoft. It surely taught me a lot about mobile applications, React Native and deployment on the stores.',
