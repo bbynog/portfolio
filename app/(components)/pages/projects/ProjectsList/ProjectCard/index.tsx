@@ -41,7 +41,7 @@ export const ProjectCard = ({
           <strong className='font-medium text-gray-50/90 transition-colors duration-500 group-hover:text-purple-500'>
             {title}
           </strong>
-          <p className='line-clamp-4 pt-2 text-gray-400'>{description}</p>
+          <p className='line-clamp-4 pt-2 text-gray-300'>{description}</p>
           <span className='mt-auto block truncate text-sm font-medium text-gray-300'>
             {techStack.map((techStack, index) => {
               if (index === techStack.length - 1) return techStack;

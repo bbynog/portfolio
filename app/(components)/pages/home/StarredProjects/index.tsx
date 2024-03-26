@@ -39,7 +39,7 @@ const StarredProjects = () => {
         })}
 
         <p className='flex items-center justify-center gap-1.5 pt-8 lg:pt-12'>
-          <span className='text-gray-400'>Got interested?</span>
+          <span className='text-gray-100'>Got interested?</span>
           <Link href='/projects' className='inline-flex'>
             See all
             <HiArrowNarrowRight />

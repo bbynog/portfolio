@@ -50,13 +50,13 @@ export const ExperienceItem = ({
           <a
             href={companyWebsite}
             target='_blank'
-            className='font-mono text-gray-50 transition-colors lg:text-gray-500 lg:hover:text-purple-500'
+            className='font-mono text-gray-50 underline underline-offset-4 transition-colors lg:text-gray-200 lg:hover:text-purple-500'
           >
             @ {companyName}
           </a>
-          <h4 className='text-gray-300'>{job}</h4>
-          <span className='text-gray-500'>{startDate}</span>
-          <p className='max-w-[400px] text-gray-400'>{description}</p>
+          <h4 className='font-bold text-gray-100'>{job}</h4>
+          <span className='text-gray-400'>{startDate}</span>
+          <p className='max-w-[400px] text-gray-200'>{description}</p>
 
           <p className='pb-3 pt-3 text-sm font-semibold text-gray-400'>
             Skills

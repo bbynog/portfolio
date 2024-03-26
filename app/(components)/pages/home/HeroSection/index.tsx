@@ -48,15 +48,16 @@ const HeroSection = () => {
         >
           <div className='text-center lg:text-left'>
             <p className='pt-2 font-mono text-purple-400 lg:pt-0'>
-              Hello, my name is
+              Hello! My name is
             </p>
             <h2 className='pt-2 text-4xl font-medium'>Gabriel Nogueira</h2>
           </div>
 
-          <p className='py-6 text-sm text-gray-400 sm:text-base'>
-            I'm a web developer, passionate about <b>tech</b>. With over
-            <b> 4 years of experience.</b> My goal is to build beautiful,
-            performant user interfaces and this is my portfolio! :)
+          <p className='py-6 text-sm text-gray-300 sm:text-base'>
+            I'm a software engineer, <b>deeply</b> passionate about life &
+            technology! With over 5 years of professional tech experience, my
+            career goal is to bring great solutions to humankind's greatest
+            problems through technology.
           </p>
           <div className='flex flex-wrap gap-x-2 gap-y-3'>
             {TECH_BADGES.map(({ name }, index) => (
@@ -74,12 +75,12 @@ const HeroSection = () => {
               <HiArrowNarrowRight />
             </p>
 
-            <div className='flex h-20 items-center gap-3 text-2xl text-gray-100 lg:text-gray-600'>
+            <div className='flex h-20 items-center gap-3 text-2xl text-gray-50 lg:text-gray-400'>
               {MOCK_CONTACTS.map((contact, index) => (
                 <a
                   href={contact.url}
                   target='_blank'
-                  className='transition-colors lg:hover:text-gray-100'
+                  className='transition-colors lg:hover:text-gray-50'
                   key={`contact-${index}`}
                 >
                   {contact.icon}

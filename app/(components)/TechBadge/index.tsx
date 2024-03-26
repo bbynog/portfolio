@@ -14,7 +14,7 @@ export const TechBadge = ({ name, className, ...props }: TechBadgeProps) => {
     <motion.span
       {...props}
       className={cn(
-        'rounded-lg bg-purple-600/80 px-3 py-1 text-sm text-purple-50',
+        'rounded-lg bg-purple-600/80 px-3 py-1 text-sm text-gray-100',
         className,
       )}
     >

@@ -20,7 +20,7 @@ export const PageIntroduction = () => {
         exit={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.6 }}
       >
-        <p className='max-w-[640px] py-6 text-center text-sm text-gray-400 sm:text-base'>
+        <p className='max-w-[640px] py-6 text-center text-sm text-gray-200 sm:text-base'>
           Here are some projects that I have worked on. Some of them I've built
           from scratch and some I have contributed to.
         </p>

@@ -60,7 +60,7 @@ export const ProjectCard = ({
         </motion.div>
 
         <motion.p
-          className='py-6 text-gray-400'
+          className='py-6 text-gray-200'
           {...fadeUpAnimation}
           transition={{ duration: 0.2, delay: 0.35 }}
         >
@@ -79,7 +79,7 @@ export const ProjectCard = ({
 
         {productionUrl && (
           <a href={productionUrl} target={productionUrl}>
-            <button className='flex items-center text-center text-sm text-gray-300 hover:text-purple-500'>
+            <button className='flex items-center text-center text-sm text-gray-200 hover:text-purple-500'>
               Live App
               <div className='pl-1'>
                 <HiOutlineExternalLink size={16} />
