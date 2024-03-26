@@ -13,8 +13,9 @@ import {
 import { motion } from 'framer-motion';
 import TECH_BADGES from '@/app/(constants)/TECH_BADGES';
 import { techBadgeAnimation } from '@/app/(lib)/animations';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HeroProfilePicture } from './HeroProfilePicture';
+import { hotjar } from 'react-hotjar';
 
 const MOCK_CONTACTS = [
   {
@@ -36,6 +37,12 @@ const MOCK_CONTACTS = [
 ];
 
 const HeroSection = () => {
+  useEffect(() => {
+    hotjar.initialize(
+      parseInt(process.env.NEXT_PUBLIC_HOTJAR_SITE_ID ?? '999999') ?? 999999,
+      6 /* 6 is hotjar version */,
+    );
+  }, []);
   return (
     <section className='lg-pb-[110px] flex w-full flex-col justify-end bg-hero-image bg-cover bg-center bg-no-repeat py-32 pb-10 sm:pb-32 lg:h-[755px]'>
       <div className='container flex flex-col-reverse items-start justify-between lg:flex-row'>
