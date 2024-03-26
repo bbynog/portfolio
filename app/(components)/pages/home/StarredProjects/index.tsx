@@ -17,7 +17,7 @@ interface StarredProjects {
 const StarredProjects = () => {
   return (
     <section className='container pt-4 lg:pt-6'>
-      <SectionTitle title='Starred Projects' subtitle='highlights' />
+      <SectionTitle title='Highlights' subtitle='highlights' />
       <div>
         {PROJECTS.map((starredProject, index) => {
           if (!starredProject.isStarred) return null;
