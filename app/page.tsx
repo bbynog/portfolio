@@ -16,7 +16,7 @@ export default async function Home() {
       <HorizontalDivider />
       <StarredProjects />
       <HorizontalDivider />
-      <ProfessionalExperience />
+      {/* <ProfessionalExperience /> */}
     </>
   );
 }

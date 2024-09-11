@@ -34,7 +34,7 @@ export const ProjectCard = ({
       transition={{ duration: 0.5 }}
     >
       <motion.div
-        className='h-[300px] w-[380px] max-w-[400px] self-center overflow-hidden rounded-lg lg:w-[40%] lg:self-start'
+        className=' max-w-[400px] self-center overflow-hidden rounded-lg lg:w-[40%] lg:self-start'
         initial={{ opacity: 0, y: 100, scale: 0.5 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: 100, scale: 0.5 }}

@@ -14,9 +14,9 @@ export interface Project {
 
 const PROJECTS: Project[] = [
   {
-    title: 'Pan',
+    title: 'Pan AI',
     description:
-      "Co-Founder & Head Front-End Engineer. Pan is an AI Video/Content Generation and Distribution platform. I'm responsible for the front-end team and engage in all infra/project's discussions with backend and AI teams. I also work with them when needed and sometimes when we are interested on each others work.",
+      "Co-Founder & Co-cto & Software Engineer. Pan AI is an AI Video/Content Generation and Distribution platform. Responsible for the front-end team and engaged in infra/project's discussions with backend and AI teams. Also worked with them when needed and sometimes when interested on each others work.",
     techStack: [
       'Next.js',
       'TypeScript',
@@ -28,13 +28,13 @@ const PROJECTS: Project[] = [
       'Vercel',
     ],
     url: '/projects/pan',
-    imageSrc: '/images/pan/pan-logo.png',
+    imageSrc: '/images/pan/logo.gif',
     imageAlt: 'Pan Logo',
     isStarred: true,
     productionUrl: 'https://usepan.ai',
     screenshots: [
       {
-        title: 'Home - Video Generation',
+        title: 'Home Page',
         image: '/images/pan/home.png',
       },
       {
@@ -42,12 +42,20 @@ const PROJECTS: Project[] = [
         image: '/images/pan/profile.png',
       },
       {
+        title: 'Internationalization Select',
+        image: '/images/pan/intl.png',
+      },
+      {
         title: 'Videos',
         image: '/images/pan/videos.png',
       },
       {
-        title: 'Video Details & Editing',
+        title: 'Video Details',
         image: '/images/pan/video-details.png',
+      },
+      {
+        title: 'DevTools Lighthouse Score',
+        image: '/images/pan/lighthouse.png',
       },
     ],
     codeAvailable: false,
